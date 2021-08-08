@@ -60,7 +60,7 @@ const Search = ({searchResults}) => {
                                 </div>
                             </section>
 
-                            <section className="hidden xl:inline-flex xl:min-w-[600px] n">
+                            <section className="hidden xl:inline-flex xl:min-w-[600px] max-h-[calc(100vh-95px)] sticky top-[93px]">
                                 <Map results={searchResults}/>
                             </section>
                         </>
@@ -72,12 +72,14 @@ const Search = ({searchResults}) => {
 
                 </div>
 
-                <LargeCard
-                    img="https://links.papareact.com/4cj"
-                    title="The Greatest Outdoors"
-                    description="Wishlist curated by Airbnb."
-                    buttonText="Get Inspired"
-                />
+                <div className="max-w-7xl mx-auto px-8 sm:px-16">
+                    <LargeCard
+                        img="https://links.papareact.com/4cj"
+                        title="The Greatest Outdoors"
+                        description="Wishlist curated by Airbnb."
+                        buttonText="Get Inspired"
+                    />
+                </div>
             </main>
 
             <Footer/>
